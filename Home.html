@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogasana.com</title>
+    <link rel="stylesheet" href="navbar.css" />
+      <link rel="stylesheet" href="hero.css" />
+      <link rel="stylesheet" href="courses.css" />
+      <link rel="stylesheet" href="diseases.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="scroll1.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" href="asset.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+     rel="stylesheet"
+   />
+  </head>
+  <body>
+    <div class="yoga-loader preloader">
+  <div class="loader-circle"></div>
+  <div class="loader-yoga-pose"></div>
+</div>
+
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="icons.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">Yogasana</span>
+        <i class="bx bx-lock-open-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Dashboard</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-home-alt"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-grid-alt"></i>
+                <span>All Courses</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bxs-grid-alt"></i>
+                <span>All Diseases</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Courses</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-user"></i>
+                <span>Beginner</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-user-voice"></i>
+                <span>Intermediate</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-user-plus"></i>
+                <span>Advance</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Info</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="notice-board.html" class="link flex">
+                <i class="bx bx-flag"></i>
+                <span>Notice Board</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-info-circle"></i>
+                <span>About</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-item">
+            <div class="menu_title flex">
+              <span class="title">Setting</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-cog"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="item pointer"onclick="toggleNightModePopup()">
+              <a  class="link flex">
+                <i class="bx bxs-moon"></i>
+                <span>Night Mode</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="night-mode-popup theme-toggle " id="nightModePopup" >
+          <div class="radio-btn">
+          <div class="radio-inner"></div>
+        </div>
+      <span class="night-mode-text">Night Mode</span>
+    </div>
+        <div class="sidebar_profile flex">
+          <span class="nav_image">
+            <img src="user-profile.jpg" alt="logo_img" id="upimg"/>
+          </span>
+          <div class="data_text">
+            <span id="username">Error</span>
+            <span id="email">Please Log In</span>
+          </div>
+        </div>
+        <li class="item pointer">
+          <a onclick="signOut()" class="link flex">
+            <i class="bx bx-log-out"></i>
+            <span>Sign Out</span>
+          </a>
+        </li>
+        <li class="item pointer">
+          <a onclick="deleteAccount()" class="link flex">
+            <i class="bx bx-message-alt-x"></i>
+            <span>Delete Account</span>
+          </a>
+        </li>
+      </div>
+    </nav>
+    <nav class="navbar flex" id="king">
+      <i class="bx bx-menu" id="sidebar-open"></i>
+
+    </nav>
+  <div class="main_content">
+  <div class="hero">
+  <div id="text__container">
+  <h1 id="mt">Yogasana</h1>
+  <h2 id="st">-Yoga For A Better Life</h2>
+  <div id="pd">
+  <p>Yogsana will Help you to learn yoga in a easy and effective way.Live
+    Classes, Various Courses Including Beginner, Intermediate, Advance etc. Disease Guide and many more.
+    With Yogasana anyone can learn yoga even if you are a beginner.</p>
+    <button>Explore Featues</button>
+</div>
+</div>
+<div id="img__container">
+  <img id="hero_image" src="assetbg.png">
+  <img id="bg" src="asset.png">
+</div>
+  </div>
+  <br>
+  <div class="center">
+     <div class="stack-area">
+       <div class="left">
+         <div class="titlef">Our Features</div>
+         <div class="sub-title">
+           Yogsana will Help you to learn yoga in a easy and effective way.It has
+           various courses like Beginner, Intermediate and many more. It also has a
+           feature which has various diseases listed in it and there is Yoga solution,
+           Ayurvedic solution and diet chart for each disease.
+           <br />
+           <button>See More Details</button>
+         </div>
+       </div>
+       <div class="right">
+         <div class="cards">
+           <div class="card">
+             <div class="sub">Simplified</div>
+             <div class="content">Complex asanas are now simple</div>
+           </div>
+           <div class="card">
+             <div class="sub">Boost Productivity</div>
+             <div class="content">Perform Tasks in less time</div>
+           </div>
+           <div class="card">
+             <div class="sub">Facilitated learning</div>
+             <div class="content">learn yoga from anywhere</div>
+           </div>
+           <div class="card">
+             <div class="sub">Night Mode</div>
+             <div class="content">for those who don't like bright</div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+  <div id"courses">
+    <div id="ch">
+      <h1 id="cht">Courses</h1>
+      <button id="chb">View All</button>
+    </div>
+    <hr>
+    <div class="card-container">
+    <div class="card1 cardc nc">
+  <img src="log.png" alt="Card Image" />
+  <div class="card-content">
+    <div class="flex-container">
+       <h1 id="tb">Beginner</h1>
+       <div class="session-text">
+           <i id="t" class='bx bx-timer'></i>
+           <span>8 Sessions</span>
+       </div>
+   </div>
+    <p>This Course Is For Those Who Have Just Started Yoga.</p>
+    <button class="hb">Learn More</button>
+  </div>
+</div>
+<div class="cardc nc1">
+<img src="inter.jpg" alt="Card Image" />
+<div class="card-content">
+<div class="flex-container">
+   <h1 id="ti">Intermediate</h1>
+   <div class="session-text">
+       <i id="t" class='bx bx-timer'></i>
+       <span>5 Sessions</span>
+   </div>
+</div>
+<p>This Course Is For Those Who Know The Basics Of Yoga.</p>
+<button class="hb"id="in">Learn More</button>
+</div>
+</div>
+<div class="cardc nc2">
+<img src="ad.jpg" alt="Card Image" />
+<div class="card-content">
+<div class="flex-container">
+   <h1 id="tb">Advance</h1>
+   <div class="session-text">
+       <i id="t" class='bx bx-timer'></i>
+       <span>3 Sessions</span>
+   </div>
+</div>
+<p>This Course Is For Those Who Know Intermediate Level Of Yoga.</p>
+<button class="hb" id="ad">Learn More</button>
+</div>
+</div>
+</div>
+  </div>
+  <div id="diseases">
+    <div id="dh">
+      <h1 id="cht">Diseases</h1>
+      <button id="dhb">View All</button>
+    </div>
+    <hr>
+    <div id="dfc">
+    <div class="cardc dc nc3">
+    <img src="Indigestion.jpg" alt="Card Image" />
+    <div class="card-content dc-content">
+    <div class="flex-container">
+       <h1 id="ti">Indigestion</h1>
+    </div>
+    <p>Indigestion is a common problem nowdays.</p>
+    <button class="hb"id="diy">Yoga Solution</button>
+    <button class="hb"id="dia">Ayurvedic Solution</button>
+    <button class="hb"id="did">Diet Chart</button>
+    </div>
+    </div>
+    <div class="cardc dc nc4">
+    <img src="diabetes.png" alt="Card Image"  id="dimg"/>
+    <div class="card-content dc-content">
+    <div class="flex-container">
+       <h1 id="ti">Indigestion</h1>
+    </div>
+    <p>Diabetes is a common problem nowdays.</p>
+    <button class="hb"id="diy">Yoga Solution</button>
+    <button class="hb"id="dia">Ayurvedic Solution</button>
+    <button class="hb"id="did">Diet Chart</button>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="main.js" defer></script>
+  </body>
+</html>

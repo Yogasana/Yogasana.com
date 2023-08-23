@@ -1,0 +1,162 @@
+.cardc{
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cardc img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.cardc h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cardc p {
+  font-size: 14px;
+}
+
+.cardc button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #53b5d5;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.card1{
+  margin-left: 100px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.cardc {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 20px; /* Add some space between cards */
+}
+
+.cardc:last-child {
+  margin-right: 0; /* Remove margin from the last card to avoid extra space */
+}
+@media only screen and (max-width:425px){
+  .card-container{
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+  }
+  .card1{
+    margin-left: 0px;
+  }
+  .cardc{
+    height: 200px;
+    width: 200px;
+  }
+}
+.flex-container {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           padding: 20px;
+       }
+
+       .session-text {
+           font-size: 1rem;
+           display: flex;
+           align-items: center;
+           margin-right:-15px;
+       }
+#tb{
+  margin-left: -15px;
+}
+#ti{
+  margin-left: -15px;
+  font-size: 1.5rem;
+}
+#in{
+  margin-top: 35px;
+}
+#ad{
+  margin-top: 22px;
+}
+.hb:hover{
+  border-width: 2px;
+  border-color: #53b5d5;
+  border-style: solid;
+  background-color: transparent;
+}
+#ch{
+ display: flex;
+ justify-content: space-between;
+ align-content: space-between;
+}
+#cht{
+  margin-left: 100px;
+  font-size: 2rem;
+}
+#chb {
+  border: none;
+  background-color: transparent;
+  margin-right: 30px;
+  font-size: 1.5rem;
+  color: skyblue;
+  position: relative;
+}
+
+#chb::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: skyblue;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s ease, opacity 0.3s ease;
+}
+
+#chb:hover::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+/* #ch::after{
+ content: "";
+ position: absolute;
+ bottom: -70px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 85%;
+ height: 2px;
+ background-color: grey;
+ opacity: 0.1;
+ z-index: -1;
+ margin-left: -2px;
+} */
+.card-container{
+  margin-top: 40px;
+}
+.dark-mode-card{
+  background-color: #00283d;
+}
+#courses{
+  margin-bottom: -50px;
+}
