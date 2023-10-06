@@ -1,83 +1,122 @@
-#dh{
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+/* Global Styles */
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
 }
-#dhb{
-  border: none;
-  background-color: transparent;
-  margin-right: 30px;
-  font-size: 1.5rem;
-  color: skyblue;
-  position: relative;
+
+/* Header Styles */
+.header {
+    color: black;
+    padding: 20px;
 }
-#dhb::before{
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: skyblue;
-  opacity: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 1s ease, opacity 0.3s ease;
+#ad{
+  margin-top: -15px;
 }
-#dhb:hover::before{
-  opacity: 1;
-  transform: scaleX(1);
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
-.dc{
-  margin-top: 50px;
-  margin-left: 100px;
-  display: flex;
-  width: 900px;
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -3px;
 }
-.dc img{
-  width: 300px;
+i{
+  color: black;
+  font-size: 30px;
 }
-.dc-content{
-  display: flex;
-  flex-direction: column;
+.header a {
+    text-decoration: none;
+    color: #fff;
 }
-hr{
-  position: absolute;
-  width: 85%;
-  background-color: grey;
-  opacity: 0.1;
-  z-index: -1;
-  margin-left: 100px;
-  margin-top: 15px;
-  height: 2px;
+
+/* Diseases Box Styles */
+.disease-box {
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    width: 315px;
+    margin-left: 10px;
+    height: 120px;
 }
-#diseases{
-  margin-top: 50px;
+
+.box-content {
+    display: flex;
+    flex-direction: row; /* Arrange content in a row */
 }
-#diy{
-  background-color:#ffa20d;
-  width: 230px;
+
+.box-image img {
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.box-details {
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    margin-top: -25px;
+    margin-left: 10px; /* Add space between image and details */
+}
+
+.box-details h2 {
+    font-size: 20px;
+}
+
+.box-details p {
+    margin: 10px 0;
+}
+
+.buttons {
+  margin-top: -20px;
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+}
+
+.buttons button {
+      font-family: 'Montserrat';
+      width: 195px;
+      display: inline-block;
+      padding: 8px 20px;
+      margin-top: 5px;
+      margin-left: -5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; /* Text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.b2{
+    background-color: #50c878;
+
+}
+.b3{
+  background-color: #0073cf;
+}
+.b1{
+  background-color: #ff6700;
+}
+.dci{
   margin-left: -10px;
+  margin-top: -10px;
 }
-#diy:hover{
-  border-color:#ffa20d;
-  background-color: transparent;
+#dcic{
+  height: 150px;
+  width: 180px;
+  margin-left: -40px;
 }
-#dia{
-  background-color: #0bd884;
-  margin-left: 10px;
-}
-#dia:hover{
-  background-color: transparent;
-  border-color: #0bd884;
-}
-#dfc{
-  display: flex;
-}
-#dimg{
-  height: 320px;
-}
-#did{
-  width: 230px;
-  margin-left: -10px;
+#bd{
+  margin-left: -2px;
 }
